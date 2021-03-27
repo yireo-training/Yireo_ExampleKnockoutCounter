@@ -1,0 +1,17 @@
+<div data-bind="scope: 'counterScope'">
+    <p>Counter: <span data-bind="text: counter">0</span></p>
+    <button data-bind="click: increment">Increment</button>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "counterScope": {
+                        "component": "Yireo_ExampleKnockoutCounter/js/counter"
+                    }
+                }
+            }
+        }
+    }
+</script>
